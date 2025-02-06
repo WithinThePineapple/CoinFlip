@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animated Coin Flip Game</title>
+  <!-- Import Open Sans from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Game container (square) whose size is controlled by --box-size -->
+  <div id="coin-game" class="game-container">
+    <h2 class="game-title">Coin Flip Game</h2>
+    <!-- Coin image remains 600px wide -->
+    <img id="coin-image" src="images/heads.png" alt="Coin" width="600">
+    <br>
+    <button onclick="flipCoin()">Flip Coin</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+:root {
+  --box-size: 525px; /* Reduced by 25% from 700px (700 * 0.75 = 525) */
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  margin: 20px;
+}
+
+.game-container {
+  background: #333;
+  color: #fff;
+  width: var(--box-size);
+  height: var(--box-size); /* Ensures the box remains square */
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the top */
+  box-sizing: border-box;
+  padding: 20px; /* Add padding to ensure content doesn't touch edges */
+  position: relative; /* For absolute positioning of the coin */
+}
+
+.game-title {
+  font-size: 2em; /* Twice as big as the default font size */
+  margin: 0 0 20px 0; /* Add margin below the title */
+}
+
+#coin-image {
+  width: 300px; /* Set a fixed width for the coin */
+  height: auto; /* Maintain aspect ratio */
+  margin: 20px 0; /* Add margin above and below the coin */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px; /* Add margin above the button */
+}
+
+@keyframes flip {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.flipping {
+  animation: flip 1s linear;
+}
