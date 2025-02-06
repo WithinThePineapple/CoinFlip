@@ -13,6 +13,6 @@ function flipCoin() {
     const result = Math.random() < 0.5 ? "heads" : "tails";
     
     // Update the coin image source based on the random result
-    coinImage.src = "images/" + result + ".png";
+    coinImage.src = result + ".png";
   }, 1000);
 }
